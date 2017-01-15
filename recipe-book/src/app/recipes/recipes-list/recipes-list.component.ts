@@ -7,9 +7,11 @@ import {Recipe} from "../recipe";
   templateUrl: './recipes-list.component.html',
 })
 export class RecipesListComponent implements OnInit {
-  recipes: Recipe[] = [];
+  recipes: Recipe[] = [
+    new Recipe("Schnitzel","Very tasty", "http://7listings.themes.7ad.in/phhk/files/2015/08/schnitzel.jpg", []),
+    new Recipe("Summer Salad","Okayish", "http://cdn.iowagirleats.com/wp-content/uploads/2013/05/Triple-Berry-Summer-Salad-03_mini.jpg", []),
+  ];
   @Output() recipeSelected = new EventEmitter<Recipe>();
-  recipe = new Recipe("Dummy","Dummy", "http://chelyabinsk.world-sewing-machines.ru/image/cache/data/Mydouble/Lady_valet-w-1100x1100.jpg");
   constructor() {}
 
   ngOnInit() {
