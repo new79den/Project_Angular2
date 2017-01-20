@@ -10,6 +10,7 @@ export class ShoppingListComponent implements OnInit {
 items: Ingredient[] = [];
   constructor(private sls: ShoppingListService) {
     this.items = this.sls.getItems();
+
   }
 
   ngOnInit() {

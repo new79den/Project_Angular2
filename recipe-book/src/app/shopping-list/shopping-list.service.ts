@@ -5,7 +5,9 @@ private items: Ingredient[] = [];
   constructor() { }
 
   getItems(){
+
     return this.items;
+
   }
 
   addItems(items: Ingredient[]) {
