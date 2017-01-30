@@ -18,4 +18,8 @@ private items: Ingredient[] = [];
     this.items.push(item);
     console.log(this.items);
   }
+
+  editItem(oldItem: Ingredient, newItem: Ingredient){
+    this.items[this.items.indexOf(oldItem)] = newItem;
+  }
 }
