@@ -21,4 +21,7 @@ selectedItem: Ingredient = null;
     this.selectedItem = item;
   }
 
+  onCleared(){
+    this.selectedItem = null;
+  }
 }
